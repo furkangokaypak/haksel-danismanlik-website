@@ -1,0 +1,38 @@
+/* Flowbite'i en başta import edin */
+@import "flowbite";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Özel CSS sınıfları */
+.ab {
+  background-color: #003776;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.App {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; /* Ortalamak için */
+}
+
+/* Dikey boşluk ve hizalama için ek stil ayarları */
+.App > div {
+  margin: 10px 0; /* Dikey boşluk için */
+  text-align: center; /* Metin ve içerikleri ortalamak için */
+}
+
+.radial-blue {
+  background: radial-gradient(#003776, #0c4a6e);
+}
